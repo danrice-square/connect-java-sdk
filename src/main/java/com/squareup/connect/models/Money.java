@@ -426,7 +426,7 @@ public class Money {
    * The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.
    * @return amount
   **/
-  @ApiModelProperty(value = "The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.")
+  @ApiModelProperty(example = "null", value = "The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.")
   public Long getAmount() {
     return amount;
   }
@@ -444,7 +444,7 @@ public class Money {
    * The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.
    * @return currency
   **/
-  @ApiModelProperty(value = "The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.")
+  @ApiModelProperty(example = "null", value = "The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.")
   public CurrencyEnum getCurrency() {
     return currency;
   }

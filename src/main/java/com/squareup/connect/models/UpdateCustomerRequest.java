@@ -62,7 +62,7 @@ public class UpdateCustomerRequest {
    * The customer's given (i.e., first) name.
    * @return givenName
   **/
-  @ApiModelProperty(value = "The customer's given (i.e., first) name.")
+  @ApiModelProperty(example = "null", value = "The customer's given (i.e., first) name.")
   public String getGivenName() {
     return givenName;
   }
@@ -80,7 +80,7 @@ public class UpdateCustomerRequest {
    * The customer's family (i.e., last) name.
    * @return familyName
   **/
-  @ApiModelProperty(value = "The customer's family (i.e., last) name.")
+  @ApiModelProperty(example = "null", value = "The customer's family (i.e., last) name.")
   public String getFamilyName() {
     return familyName;
   }
@@ -98,7 +98,7 @@ public class UpdateCustomerRequest {
    * The name of the customer's company.
    * @return companyName
   **/
-  @ApiModelProperty(value = "The name of the customer's company.")
+  @ApiModelProperty(example = "null", value = "The name of the customer's company.")
   public String getCompanyName() {
     return companyName;
   }
@@ -116,7 +116,7 @@ public class UpdateCustomerRequest {
    * A nickname for the customer.
    * @return nickname
   **/
-  @ApiModelProperty(value = "A nickname for the customer.")
+  @ApiModelProperty(example = "null", value = "A nickname for the customer.")
   public String getNickname() {
     return nickname;
   }
@@ -134,7 +134,7 @@ public class UpdateCustomerRequest {
    * The customer's email address.
    * @return emailAddress
   **/
-  @ApiModelProperty(value = "The customer's email address.")
+  @ApiModelProperty(example = "null", value = "The customer's email address.")
   public String getEmailAddress() {
     return emailAddress;
   }
@@ -152,7 +152,7 @@ public class UpdateCustomerRequest {
    * The customer's physical address.
    * @return address
   **/
-  @ApiModelProperty(value = "The customer's physical address.")
+  @ApiModelProperty(example = "null", value = "The customer's physical address.")
   public Address getAddress() {
     return address;
   }
@@ -170,7 +170,7 @@ public class UpdateCustomerRequest {
    * The customer's phone number.
    * @return phoneNumber
   **/
-  @ApiModelProperty(value = "The customer's phone number.")
+  @ApiModelProperty(example = "null", value = "The customer's phone number.")
   public String getPhoneNumber() {
     return phoneNumber;
   }
@@ -188,7 +188,7 @@ public class UpdateCustomerRequest {
    * An optional second ID you can set to associate the customer with an entity in another system.
    * @return referenceId
   **/
-  @ApiModelProperty(value = "An optional second ID you can set to associate the customer with an entity in another system.")
+  @ApiModelProperty(example = "null", value = "An optional second ID you can set to associate the customer with an entity in another system.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -206,7 +206,7 @@ public class UpdateCustomerRequest {
    * An optional note to associate with the customer.
    * @return note
   **/
-  @ApiModelProperty(value = "An optional note to associate with the customer.")
+  @ApiModelProperty(example = "null", value = "An optional note to associate with the customer.")
   public String getNote() {
     return note;
   }

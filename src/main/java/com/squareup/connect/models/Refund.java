@@ -96,7 +96,7 @@ public class Refund {
    * The refund's unique ID.
    * @return id
   **/
-  @ApiModelProperty(required = true, value = "The refund's unique ID.")
+  @ApiModelProperty(example = "null", required = true, value = "The refund's unique ID.")
   public String getId() {
     return id;
   }
@@ -114,7 +114,7 @@ public class Refund {
    * The ID of the refund's associated location.
    * @return locationId
   **/
-  @ApiModelProperty(required = true, value = "The ID of the refund's associated location.")
+  @ApiModelProperty(example = "null", required = true, value = "The ID of the refund's associated location.")
   public String getLocationId() {
     return locationId;
   }
@@ -132,7 +132,7 @@ public class Refund {
    * The ID of the transaction that the refunded tender is part of.
    * @return transactionId
   **/
-  @ApiModelProperty(required = true, value = "The ID of the transaction that the refunded tender is part of.")
+  @ApiModelProperty(example = "null", required = true, value = "The ID of the transaction that the refunded tender is part of.")
   public String getTransactionId() {
     return transactionId;
   }
@@ -150,7 +150,7 @@ public class Refund {
    * The ID of the refunded tender.
    * @return tenderId
   **/
-  @ApiModelProperty(required = true, value = "The ID of the refunded tender.")
+  @ApiModelProperty(example = "null", required = true, value = "The ID of the refunded tender.")
   public String getTenderId() {
     return tenderId;
   }
@@ -168,7 +168,7 @@ public class Refund {
    * The time when the refund was created, in RFC 3339 format.
    * @return createdAt
   **/
-  @ApiModelProperty(value = "The time when the refund was created, in RFC 3339 format.")
+  @ApiModelProperty(example = "null", value = "The time when the refund was created, in RFC 3339 format.")
   public String getCreatedAt() {
     return createdAt;
   }
@@ -186,7 +186,7 @@ public class Refund {
    * The reason for the refund being issued.
    * @return reason
   **/
-  @ApiModelProperty(required = true, value = "The reason for the refund being issued.")
+  @ApiModelProperty(example = "null", required = true, value = "The reason for the refund being issued.")
   public String getReason() {
     return reason;
   }
@@ -204,7 +204,7 @@ public class Refund {
    * The amount of money refunded to the buyer.
    * @return amountMoney
   **/
-  @ApiModelProperty(required = true, value = "The amount of money refunded to the buyer.")
+  @ApiModelProperty(example = "null", required = true, value = "The amount of money refunded to the buyer.")
   public Money getAmountMoney() {
     return amountMoney;
   }
@@ -222,7 +222,7 @@ public class Refund {
    * The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
    * @return status
   **/
-  @ApiModelProperty(required = true, value = "The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).")
+  @ApiModelProperty(example = "null", required = true, value = "The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).")
   public StatusEnum getStatus() {
     return status;
   }
@@ -240,7 +240,7 @@ public class Refund {
    * The amount of Square processing fee money refunded to the *merchant*.
    * @return processingFeeMoney
   **/
-  @ApiModelProperty(value = "The amount of Square processing fee money refunded to the *merchant*.")
+  @ApiModelProperty(example = "null", value = "The amount of Square processing fee money refunded to the *merchant*.")
   public Money getProcessingFeeMoney() {
     return processingFeeMoney;
   }

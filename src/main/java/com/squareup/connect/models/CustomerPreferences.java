@@ -37,7 +37,7 @@ public class CustomerPreferences {
    * The customer has unsubscribed from receiving marketing campaign emails.
    * @return emailUnsubscribed
   **/
-  @ApiModelProperty(value = "The customer has unsubscribed from receiving marketing campaign emails.")
+  @ApiModelProperty(example = "null", value = "The customer has unsubscribed from receiving marketing campaign emails.")
   public Boolean getEmailUnsubscribed() {
     return emailUnsubscribed;
   }

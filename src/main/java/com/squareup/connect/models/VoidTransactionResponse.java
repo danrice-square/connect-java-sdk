@@ -45,7 +45,7 @@ public class VoidTransactionResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }

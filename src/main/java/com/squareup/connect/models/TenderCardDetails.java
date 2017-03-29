@@ -114,7 +114,7 @@ public class TenderCardDetails {
    * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
    * @return status
   **/
-  @ApiModelProperty(value = "The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.")
+  @ApiModelProperty(example = "null", value = "The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.")
   public StatusEnum getStatus() {
     return status;
   }
@@ -132,7 +132,7 @@ public class TenderCardDetails {
    * The credit card's non-confidential details.
    * @return card
   **/
-  @ApiModelProperty(value = "The credit card's non-confidential details.")
+  @ApiModelProperty(example = "null", value = "The credit card's non-confidential details.")
   public Card getCard() {
     return card;
   }
@@ -150,7 +150,7 @@ public class TenderCardDetails {
    * The method used to enter the card's details for the transaction.
    * @return entryMethod
   **/
-  @ApiModelProperty(value = "The method used to enter the card's details for the transaction.")
+  @ApiModelProperty(example = "null", value = "The method used to enter the card's details for the transaction.")
   public EntryMethodEnum getEntryMethod() {
     return entryMethod;
   }

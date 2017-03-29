@@ -52,7 +52,7 @@ public class ListCustomersResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -75,7 +75,7 @@ public class ListCustomersResponse {
    * An array of `Customer` objects that match your query.
    * @return customers
   **/
-  @ApiModelProperty(value = "An array of `Customer` objects that match your query.")
+  @ApiModelProperty(example = "null", value = "An array of `Customer` objects that match your query.")
   public List<Customer> getCustomers() {
     return customers;
   }
@@ -93,7 +93,7 @@ public class ListCustomersResponse {
    * A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.
    * @return cursor
   **/
-  @ApiModelProperty(value = "A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.")
+  @ApiModelProperty(example = "null", value = "A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.")
   public String getCursor() {
     return cursor;
   }

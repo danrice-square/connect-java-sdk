@@ -49,7 +49,7 @@ public class RetrieveCustomerResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -67,7 +67,7 @@ public class RetrieveCustomerResponse {
    * The requested customer.
    * @return customer
   **/
-  @ApiModelProperty(value = "The requested customer.")
+  @ApiModelProperty(example = "null", value = "The requested customer.")
   public Customer getCustomer() {
     return customer;
   }

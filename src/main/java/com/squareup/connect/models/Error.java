@@ -256,7 +256,7 @@ public class Error {
    * The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
    * @return category
   **/
-  @ApiModelProperty(required = true, value = "The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.")
+  @ApiModelProperty(example = "null", required = true, value = "The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.")
   public CategoryEnum getCategory() {
     return category;
   }
@@ -274,7 +274,7 @@ public class Error {
    * The error's specific code. See [ErrorCode](#type-errorcode) for possible values
    * @return code
   **/
-  @ApiModelProperty(required = true, value = "The error's specific code. See [ErrorCode](#type-errorcode) for possible values")
+  @ApiModelProperty(example = "null", required = true, value = "The error's specific code. See [ErrorCode](#type-errorcode) for possible values")
   public CodeEnum getCode() {
     return code;
   }
@@ -292,7 +292,7 @@ public class Error {
    * A human-readable description of the error for debugging purposes.
    * @return detail
   **/
-  @ApiModelProperty(value = "A human-readable description of the error for debugging purposes.")
+  @ApiModelProperty(example = "null", value = "A human-readable description of the error for debugging purposes.")
   public String getDetail() {
     return detail;
   }
@@ -310,7 +310,7 @@ public class Error {
    * The name of the field provided in the original request that the error pertains to, if any.
    * @return field
   **/
-  @ApiModelProperty(value = "The name of the field provided in the original request that the error pertains to, if any.")
+  @ApiModelProperty(example = "null", value = "The name of the field provided in the original request that the error pertains to, if any.")
   public String getField() {
     return field;
   }

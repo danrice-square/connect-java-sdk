@@ -49,7 +49,7 @@ public class ListLocationsResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -72,7 +72,7 @@ public class ListLocationsResponse {
    * The business's locations.
    * @return locations
   **/
-  @ApiModelProperty(value = "The business's locations.")
+  @ApiModelProperty(example = "null", value = "The business's locations.")
   public List<Location> getLocations() {
     return locations;
   }

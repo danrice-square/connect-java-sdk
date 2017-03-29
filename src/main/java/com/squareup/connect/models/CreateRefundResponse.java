@@ -49,7 +49,7 @@ public class CreateRefundResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -67,7 +67,7 @@ public class CreateRefundResponse {
    * The created refund.
    * @return refund
   **/
-  @ApiModelProperty(value = "The created refund.")
+  @ApiModelProperty(example = "null", value = "The created refund.")
   public Refund getRefund() {
     return refund;
   }

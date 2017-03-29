@@ -85,7 +85,7 @@ public class Customer {
    * The customer's unique ID.
    * @return id
   **/
-  @ApiModelProperty(required = true, value = "The customer's unique ID.")
+  @ApiModelProperty(example = "null", required = true, value = "The customer's unique ID.")
   public String getId() {
     return id;
   }
@@ -103,7 +103,7 @@ public class Customer {
    * The time when the customer was created, in RFC 3339 format.
    * @return createdAt
   **/
-  @ApiModelProperty(required = true, value = "The time when the customer was created, in RFC 3339 format.")
+  @ApiModelProperty(example = "null", required = true, value = "The time when the customer was created, in RFC 3339 format.")
   public String getCreatedAt() {
     return createdAt;
   }
@@ -121,7 +121,7 @@ public class Customer {
    * The time when the customer was last updated, in RFC 3339 format.
    * @return updatedAt
   **/
-  @ApiModelProperty(required = true, value = "The time when the customer was last updated, in RFC 3339 format.")
+  @ApiModelProperty(example = "null", required = true, value = "The time when the customer was last updated, in RFC 3339 format.")
   public String getUpdatedAt() {
     return updatedAt;
   }
@@ -144,7 +144,7 @@ public class Customer {
    * The non-confidential details of the customer's cards on file.
    * @return cards
   **/
-  @ApiModelProperty(value = "The non-confidential details of the customer's cards on file.")
+  @ApiModelProperty(example = "null", value = "The non-confidential details of the customer's cards on file.")
   public List<Card> getCards() {
     return cards;
   }
@@ -162,7 +162,7 @@ public class Customer {
    * The customer's given (i.e., first) name.
    * @return givenName
   **/
-  @ApiModelProperty(value = "The customer's given (i.e., first) name.")
+  @ApiModelProperty(example = "null", value = "The customer's given (i.e., first) name.")
   public String getGivenName() {
     return givenName;
   }
@@ -180,7 +180,7 @@ public class Customer {
    * The customer's family (i.e., last) name.
    * @return familyName
   **/
-  @ApiModelProperty(value = "The customer's family (i.e., last) name.")
+  @ApiModelProperty(example = "null", value = "The customer's family (i.e., last) name.")
   public String getFamilyName() {
     return familyName;
   }
@@ -198,7 +198,7 @@ public class Customer {
    * The customer's nickname.
    * @return nickname
   **/
-  @ApiModelProperty(value = "The customer's nickname.")
+  @ApiModelProperty(example = "null", value = "The customer's nickname.")
   public String getNickname() {
     return nickname;
   }
@@ -216,7 +216,7 @@ public class Customer {
    * The name of the customer's company.
    * @return companyName
   **/
-  @ApiModelProperty(value = "The name of the customer's company.")
+  @ApiModelProperty(example = "null", value = "The name of the customer's company.")
   public String getCompanyName() {
     return companyName;
   }
@@ -234,7 +234,7 @@ public class Customer {
    * The customer's email address.
    * @return emailAddress
   **/
-  @ApiModelProperty(value = "The customer's email address.")
+  @ApiModelProperty(example = "null", value = "The customer's email address.")
   public String getEmailAddress() {
     return emailAddress;
   }
@@ -252,7 +252,7 @@ public class Customer {
    * The customer's physical address.
    * @return address
   **/
-  @ApiModelProperty(value = "The customer's physical address.")
+  @ApiModelProperty(example = "null", value = "The customer's physical address.")
   public Address getAddress() {
     return address;
   }
@@ -270,7 +270,7 @@ public class Customer {
    * The customer's phone number.
    * @return phoneNumber
   **/
-  @ApiModelProperty(value = "The customer's phone number.")
+  @ApiModelProperty(example = "null", value = "The customer's phone number.")
   public String getPhoneNumber() {
     return phoneNumber;
   }
@@ -288,7 +288,7 @@ public class Customer {
    * A second ID you can set to associate the customer with an entity in another system.
    * @return referenceId
   **/
-  @ApiModelProperty(value = "A second ID you can set to associate the customer with an entity in another system.")
+  @ApiModelProperty(example = "null", value = "A second ID you can set to associate the customer with an entity in another system.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -306,7 +306,7 @@ public class Customer {
    * A note to associate with the customer.
    * @return note
   **/
-  @ApiModelProperty(value = "A note to associate with the customer.")
+  @ApiModelProperty(example = "null", value = "A note to associate with the customer.")
   public String getNote() {
     return note;
   }
@@ -324,7 +324,7 @@ public class Customer {
    * The customer's preferences.
    * @return preferences
   **/
-  @ApiModelProperty(value = "The customer's preferences.")
+  @ApiModelProperty(example = "null", value = "The customer's preferences.")
   public CustomerPreferences getPreferences() {
     return preferences;
   }
@@ -347,7 +347,7 @@ public class Customer {
    * The groups the customer belongs to.
    * @return groups
   **/
-  @ApiModelProperty(value = "The groups the customer belongs to.")
+  @ApiModelProperty(example = "null", value = "The groups the customer belongs to.")
   public List<CustomerGroupInfo> getGroups() {
     return groups;
   }

@@ -44,7 +44,7 @@ public class CreateOrderRequestLineItem {
    * The name of the line item. This value cannot exceed 500 characters.
    * @return name
   **/
-  @ApiModelProperty(required = true, value = "The name of the line item. This value cannot exceed 500 characters.")
+  @ApiModelProperty(example = "null", required = true, value = "The name of the line item. This value cannot exceed 500 characters.")
   public String getName() {
     return name;
   }
@@ -62,7 +62,7 @@ public class CreateOrderRequestLineItem {
    * The quantity to purchase, as a string representation of a number. Currently, only integer values are supported.
    * @return quantity
   **/
-  @ApiModelProperty(required = true, value = "The quantity to purchase, as a string representation of a number. Currently, only integer values are supported.")
+  @ApiModelProperty(example = "null", required = true, value = "The quantity to purchase, as a string representation of a number. Currently, only integer values are supported.")
   public String getQuantity() {
     return quantity;
   }
@@ -80,7 +80,7 @@ public class CreateOrderRequestLineItem {
    * The base price for a single unit of the line item's associated variation. If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.
    * @return basePriceMoney
   **/
-  @ApiModelProperty(required = true, value = "The base price for a single unit of the line item's associated variation. If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.")
+  @ApiModelProperty(example = "null", required = true, value = "The base price for a single unit of the line item's associated variation. If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.")
   public Money getBasePriceMoney() {
     return basePriceMoney;
   }

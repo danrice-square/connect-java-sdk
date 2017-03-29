@@ -69,7 +69,7 @@ public class ChargeRequest {
    * A value you specify that uniquely identifies this transaction among transactions you've created.  If you're unsure whether a particular transaction succeeded, you can reattempt it with the same idempotency key without worrying about double-charging the buyer.  See [Idempotency keys](#idempotencykeys) for more information.
    * @return idempotencyKey
   **/
-  @ApiModelProperty(required = true, value = "A value you specify that uniquely identifies this transaction among transactions you've created.  If you're unsure whether a particular transaction succeeded, you can reattempt it with the same idempotency key without worrying about double-charging the buyer.  See [Idempotency keys](#idempotencykeys) for more information.")
+  @ApiModelProperty(example = "null", required = true, value = "A value you specify that uniquely identifies this transaction among transactions you've created.  If you're unsure whether a particular transaction succeeded, you can reattempt it with the same idempotency key without worrying about double-charging the buyer.  See [Idempotency keys](#idempotencykeys) for more information.")
   public String getIdempotencyKey() {
     return idempotencyKey;
   }
@@ -87,7 +87,7 @@ public class ChargeRequest {
    * The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.
    * @return amountMoney
   **/
-  @ApiModelProperty(required = true, value = "The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.")
+  @ApiModelProperty(example = "null", required = true, value = "The amount of money to charge.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  The value of `currency` must match the currency associated with the business that is charging the card.")
   public Money getAmountMoney() {
     return amountMoney;
   }
@@ -105,7 +105,7 @@ public class ChargeRequest {
    * A nonce generated from the `SqPaymentForm` that represents the card to charge.  The application that provides a nonce to this endpoint must be the _same application_ that generated the nonce with the `SqPaymentForm`. Otherwise, the nonce is invalid.  Do not provide a value for this field if you provide a value for `customer_card_id`.
    * @return cardNonce
   **/
-  @ApiModelProperty(value = "A nonce generated from the `SqPaymentForm` that represents the card to charge.  The application that provides a nonce to this endpoint must be the _same application_ that generated the nonce with the `SqPaymentForm`. Otherwise, the nonce is invalid.  Do not provide a value for this field if you provide a value for `customer_card_id`.")
+  @ApiModelProperty(example = "null", value = "A nonce generated from the `SqPaymentForm` that represents the card to charge.  The application that provides a nonce to this endpoint must be the _same application_ that generated the nonce with the `SqPaymentForm`. Otherwise, the nonce is invalid.  Do not provide a value for this field if you provide a value for `customer_card_id`.")
   public String getCardNonce() {
     return cardNonce;
   }
@@ -123,7 +123,7 @@ public class ChargeRequest {
    * The ID of the customer card on file to charge. Do not provide a value for this field if you provide a value for `card_nonce`.  If you provide this value, you _must_ also provide a value for `customer_id`.
    * @return customerCardId
   **/
-  @ApiModelProperty(value = "The ID of the customer card on file to charge. Do not provide a value for this field if you provide a value for `card_nonce`.  If you provide this value, you _must_ also provide a value for `customer_id`.")
+  @ApiModelProperty(example = "null", value = "The ID of the customer card on file to charge. Do not provide a value for this field if you provide a value for `card_nonce`.  If you provide this value, you _must_ also provide a value for `customer_id`.")
   public String getCustomerCardId() {
     return customerCardId;
   }
@@ -141,7 +141,7 @@ public class ChargeRequest {
    * If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransation](#endpoint-voidtransaction) endpoint).  Default value: `false`
    * @return delayCapture
   **/
-  @ApiModelProperty(value = "If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransation](#endpoint-voidtransaction) endpoint).  Default value: `false`")
+  @ApiModelProperty(example = "null", value = "If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransation](#endpoint-voidtransaction) endpoint).  Default value: `false`")
   public Boolean getDelayCapture() {
     return delayCapture;
   }
@@ -159,7 +159,7 @@ public class ChargeRequest {
    * An optional ID you can associate with the transaction for your own purposes (such as to associate the transaction with an entity ID in your own database).  This value cannot exceed 40 characters.
    * @return referenceId
   **/
-  @ApiModelProperty(value = "An optional ID you can associate with the transaction for your own purposes (such as to associate the transaction with an entity ID in your own database).  This value cannot exceed 40 characters.")
+  @ApiModelProperty(example = "null", value = "An optional ID you can associate with the transaction for your own purposes (such as to associate the transaction with an entity ID in your own database).  This value cannot exceed 40 characters.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -177,7 +177,7 @@ public class ChargeRequest {
    * An optional note to associate with the transaction.  This value cannot exceed 60 characters.
    * @return note
   **/
-  @ApiModelProperty(value = "An optional note to associate with the transaction.  This value cannot exceed 60 characters.")
+  @ApiModelProperty(example = "null", value = "An optional note to associate with the transaction.  This value cannot exceed 60 characters.")
   public String getNote() {
     return note;
   }
@@ -195,7 +195,7 @@ public class ChargeRequest {
    * The ID of the customer to associate this transaction with. This field is required if you provide a value for `customer_card_id`, and optional otherwise.
    * @return customerId
   **/
-  @ApiModelProperty(value = "The ID of the customer to associate this transaction with. This field is required if you provide a value for `customer_card_id`, and optional otherwise.")
+  @ApiModelProperty(example = "null", value = "The ID of the customer to associate this transaction with. This field is required if you provide a value for `customer_card_id`, and optional otherwise.")
   public String getCustomerId() {
     return customerId;
   }
@@ -213,7 +213,7 @@ public class ChargeRequest {
    * The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.
    * @return billingAddress
   **/
-  @ApiModelProperty(value = "The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.")
+  @ApiModelProperty(example = "null", value = "The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.")
   public Address getBillingAddress() {
     return billingAddress;
   }
@@ -231,7 +231,7 @@ public class ChargeRequest {
    * The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.
    * @return shippingAddress
   **/
-  @ApiModelProperty(value = "The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.")
+  @ApiModelProperty(example = "null", value = "The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.")
   public Address getShippingAddress() {
     return shippingAddress;
   }
@@ -249,7 +249,7 @@ public class ChargeRequest {
    * The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.
    * @return buyerEmailAddress
   **/
-  @ApiModelProperty(value = "The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.")
+  @ApiModelProperty(example = "null", value = "The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.")
   public String getBuyerEmailAddress() {
     return buyerEmailAddress;
   }

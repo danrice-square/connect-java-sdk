@@ -57,7 +57,7 @@ public class CreateCheckoutRequest {
    * A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency keys](#idempotencykeys) for more information.
    * @return idempotencyKey
   **/
-  @ApiModelProperty(required = true, value = "A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency keys](#idempotencykeys) for more information.")
+  @ApiModelProperty(example = "null", required = true, value = "A unique string that identifies this checkout among others you've created. It can be any valid string but must be unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid processing the same order more than once. If you're unsure whether a particular checkout was created successfully, you can reattempt it with the same idempotency key and all the same other parameters without worrying about creating duplicates.  We recommend using a random number/string generator native to the language you are working in to generate strings for your idempotency keys.  See [Idempotency keys](#idempotencykeys) for more information.")
   public String getIdempotencyKey() {
     return idempotencyKey;
   }
@@ -75,7 +75,7 @@ public class CreateCheckoutRequest {
    * The order including line items to be checked out.
    * @return order
   **/
-  @ApiModelProperty(required = true, value = "The order including line items to be checked out.")
+  @ApiModelProperty(example = "null", required = true, value = "The order including line items to be checked out.")
   public CreateOrderRequestOrder getOrder() {
     return order;
   }
@@ -93,7 +93,7 @@ public class CreateCheckoutRequest {
    * If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.
    * @return askForShippingAddress
   **/
-  @ApiModelProperty(value = "If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.")
+  @ApiModelProperty(example = "null", value = "If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.")
   public Boolean getAskForShippingAddress() {
     return askForShippingAddress;
   }
@@ -111,7 +111,7 @@ public class CreateCheckoutRequest {
    * The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.
    * @return merchantSupportEmail
   **/
-  @ApiModelProperty(value = "The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.")
+  @ApiModelProperty(example = "null", value = "The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.")
   public String getMerchantSupportEmail() {
     return merchantSupportEmail;
   }
@@ -129,7 +129,7 @@ public class CreateCheckoutRequest {
    * If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.
    * @return prePopulateBuyerEmail
   **/
-  @ApiModelProperty(value = "If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.")
+  @ApiModelProperty(example = "null", value = "If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.")
   public String getPrePopulateBuyerEmail() {
     return prePopulateBuyerEmail;
   }
@@ -147,7 +147,7 @@ public class CreateCheckoutRequest {
    * If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.
    * @return prePopulateShippingAddress
   **/
-  @ApiModelProperty(value = "If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.")
+  @ApiModelProperty(example = "null", value = "If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.")
   public Address getPrePopulateShippingAddress() {
     return prePopulateShippingAddress;
   }
@@ -165,7 +165,7 @@ public class CreateCheckoutRequest {
    * The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default is unset.
    * @return redirectUrl
   **/
-  @ApiModelProperty(value = "The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default is unset.")
+  @ApiModelProperty(example = "null", value = "The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default is unset.")
   public String getRedirectUrl() {
     return redirectUrl;
   }

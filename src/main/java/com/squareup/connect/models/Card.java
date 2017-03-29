@@ -100,7 +100,7 @@ public class Card {
    * The card's unique ID, if any.
    * @return id
   **/
-  @ApiModelProperty(value = "The card's unique ID, if any.")
+  @ApiModelProperty(example = "null", value = "The card's unique ID, if any.")
   public String getId() {
     return id;
   }
@@ -118,7 +118,7 @@ public class Card {
    * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
    * @return cardBrand
   **/
-  @ApiModelProperty(value = "The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.")
+  @ApiModelProperty(example = "null", value = "The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.")
   public CardBrandEnum getCardBrand() {
     return cardBrand;
   }
@@ -136,7 +136,7 @@ public class Card {
    * The last 4 digits of the card's number.
    * @return last4
   **/
-  @ApiModelProperty(value = "The last 4 digits of the card's number.")
+  @ApiModelProperty(example = "null", value = "The last 4 digits of the card's number.")
   public String getLast4() {
     return last4;
   }
@@ -154,7 +154,7 @@ public class Card {
    * The month of the card's expiration date. This value is always between `1` and `12`, inclusive.
    * @return expMonth
   **/
-  @ApiModelProperty(value = "The month of the card's expiration date. This value is always between `1` and `12`, inclusive.")
+  @ApiModelProperty(example = "null", value = "The month of the card's expiration date. This value is always between `1` and `12`, inclusive.")
   public Long getExpMonth() {
     return expMonth;
   }
@@ -172,7 +172,7 @@ public class Card {
    * The four-digit year of the card's expiration date.
    * @return expYear
   **/
-  @ApiModelProperty(value = "The four-digit year of the card's expiration date.")
+  @ApiModelProperty(example = "null", value = "The four-digit year of the card's expiration date.")
   public Long getExpYear() {
     return expYear;
   }
@@ -190,7 +190,7 @@ public class Card {
    * The cardholder name. This value is present only if this object represents a customer's card on file.
    * @return cardholderName
   **/
-  @ApiModelProperty(value = "The cardholder name. This value is present only if this object represents a customer's card on file.")
+  @ApiModelProperty(example = "null", value = "The cardholder name. This value is present only if this object represents a customer's card on file.")
   public String getCardholderName() {
     return cardholderName;
   }
@@ -208,7 +208,7 @@ public class Card {
    * The card's billing address. This value is present only if this object represents a customer's card on file.
    * @return billingAddress
   **/
-  @ApiModelProperty(value = "The card's billing address. This value is present only if this object represents a customer's card on file.")
+  @ApiModelProperty(example = "null", value = "The card's billing address. This value is present only if this object represents a customer's card on file.")
   public Address getBillingAddress() {
     return billingAddress;
   }

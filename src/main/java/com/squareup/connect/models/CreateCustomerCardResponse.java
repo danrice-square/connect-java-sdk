@@ -49,7 +49,7 @@ public class CreateCustomerCardResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -67,7 +67,7 @@ public class CreateCustomerCardResponse {
    * The created card on file.
    * @return card
   **/
-  @ApiModelProperty(value = "The created card on file.")
+  @ApiModelProperty(example = "null", value = "The created card on file.")
   public Card getCard() {
     return card;
   }

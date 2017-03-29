@@ -108,7 +108,7 @@ public class Tender {
    * The tender's unique ID.
    * @return id
   **/
-  @ApiModelProperty(value = "The tender's unique ID.")
+  @ApiModelProperty(example = "null", value = "The tender's unique ID.")
   public String getId() {
     return id;
   }
@@ -126,7 +126,7 @@ public class Tender {
    * The ID of the transaction's associated location.
    * @return locationId
   **/
-  @ApiModelProperty(value = "The ID of the transaction's associated location.")
+  @ApiModelProperty(example = "null", value = "The ID of the transaction's associated location.")
   public String getLocationId() {
     return locationId;
   }
@@ -144,7 +144,7 @@ public class Tender {
    * The ID of the tender's associated transaction.
    * @return transactionId
   **/
-  @ApiModelProperty(value = "The ID of the tender's associated transaction.")
+  @ApiModelProperty(example = "null", value = "The ID of the tender's associated transaction.")
   public String getTransactionId() {
     return transactionId;
   }
@@ -162,7 +162,7 @@ public class Tender {
    * The time when the tender was created, in RFC 3339 format.
    * @return createdAt
   **/
-  @ApiModelProperty(value = "The time when the tender was created, in RFC 3339 format.")
+  @ApiModelProperty(example = "null", value = "The time when the tender was created, in RFC 3339 format.")
   public String getCreatedAt() {
     return createdAt;
   }
@@ -180,7 +180,7 @@ public class Tender {
    * An optional note associated with the tender at the time of payment.
    * @return note
   **/
-  @ApiModelProperty(value = "An optional note associated with the tender at the time of payment.")
+  @ApiModelProperty(example = "null", value = "An optional note associated with the tender at the time of payment.")
   public String getNote() {
     return note;
   }
@@ -198,7 +198,7 @@ public class Tender {
    * The amount of the tender.
    * @return amountMoney
   **/
-  @ApiModelProperty(value = "The amount of the tender.")
+  @ApiModelProperty(example = "null", value = "The amount of the tender.")
   public Money getAmountMoney() {
     return amountMoney;
   }
@@ -216,7 +216,7 @@ public class Tender {
    * The amount of any Square processing fees applied to the tender.  This field is not immediately populated when a new transaction is created. It is usually available after about ten seconds.
    * @return processingFeeMoney
   **/
-  @ApiModelProperty(value = "The amount of any Square processing fees applied to the tender.  This field is not immediately populated when a new transaction is created. It is usually available after about ten seconds.")
+  @ApiModelProperty(example = "null", value = "The amount of any Square processing fees applied to the tender.  This field is not immediately populated when a new transaction is created. It is usually available after about ten seconds.")
   public Money getProcessingFeeMoney() {
     return processingFeeMoney;
   }
@@ -234,7 +234,7 @@ public class Tender {
    * If the tender is associated with a customer or represents a customer's card on file, this is the ID of the associated customer.
    * @return customerId
   **/
-  @ApiModelProperty(value = "If the tender is associated with a customer or represents a customer's card on file, this is the ID of the associated customer.")
+  @ApiModelProperty(example = "null", value = "If the tender is associated with a customer or represents a customer's card on file, this is the ID of the associated customer.")
   public String getCustomerId() {
     return customerId;
   }
@@ -252,7 +252,7 @@ public class Tender {
    * The type of tender, such as `CARD` or `CASH`.
    * @return type
   **/
-  @ApiModelProperty(required = true, value = "The type of tender, such as `CARD` or `CASH`.")
+  @ApiModelProperty(example = "null", required = true, value = "The type of tender, such as `CARD` or `CASH`.")
   public TypeEnum getType() {
     return type;
   }
@@ -270,7 +270,7 @@ public class Tender {
    * The details of the card tender.  This value is present only if the value of `type` is `CARD`.
    * @return cardDetails
   **/
-  @ApiModelProperty(value = "The details of the card tender.  This value is present only if the value of `type` is `CARD`.")
+  @ApiModelProperty(example = "null", value = "The details of the card tender.  This value is present only if the value of `type` is `CARD`.")
   public TenderCardDetails getCardDetails() {
     return cardDetails;
   }
@@ -288,7 +288,7 @@ public class Tender {
    * The details of the cash tender.  This value is present only if the value of `type` is `CASH`.
    * @return cashDetails
   **/
-  @ApiModelProperty(value = "The details of the cash tender.  This value is present only if the value of `type` is `CASH`.")
+  @ApiModelProperty(example = "null", value = "The details of the cash tender.  This value is present only if the value of `type` is `CASH`.")
   public TenderCashDetails getCashDetails() {
     return cashDetails;
   }

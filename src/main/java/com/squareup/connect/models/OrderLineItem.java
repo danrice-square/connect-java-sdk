@@ -50,7 +50,7 @@ public class OrderLineItem {
    * The line item's ID, unique only within this order.
    * @return id
   **/
-  @ApiModelProperty(value = "The line item's ID, unique only within this order.")
+  @ApiModelProperty(example = "null", value = "The line item's ID, unique only within this order.")
   public String getId() {
     return id;
   }
@@ -68,7 +68,7 @@ public class OrderLineItem {
    * The name of the line item.
    * @return name
   **/
-  @ApiModelProperty(value = "The name of the line item.")
+  @ApiModelProperty(example = "null", value = "The name of the line item.")
   public String getName() {
     return name;
   }
@@ -86,7 +86,7 @@ public class OrderLineItem {
    * The quantity of the product to purchase. Currently, this string must have an integer value.
    * @return quantity
   **/
-  @ApiModelProperty(value = "The quantity of the product to purchase. Currently, this string must have an integer value.")
+  @ApiModelProperty(example = "null", value = "The quantity of the product to purchase. Currently, this string must have an integer value.")
   public String getQuantity() {
     return quantity;
   }
@@ -104,7 +104,7 @@ public class OrderLineItem {
    * The base price for a single unit of the line item's associated variation.  If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.
    * @return basePriceMoney
   **/
-  @ApiModelProperty(value = "The base price for a single unit of the line item's associated variation.  If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.")
+  @ApiModelProperty(example = "null", value = "The base price for a single unit of the line item's associated variation.  If a line item represents a Custom Amount instead of a particular product, this field indicates that amount.")
   public Money getBasePriceMoney() {
     return basePriceMoney;
   }
@@ -122,7 +122,7 @@ public class OrderLineItem {
    * The total amount of money to collect for this line item.
    * @return totalMoney
   **/
-  @ApiModelProperty(value = "The total amount of money to collect for this line item.")
+  @ApiModelProperty(example = "null", value = "The total amount of money to collect for this line item.")
   public Money getTotalMoney() {
     return totalMoney;
   }

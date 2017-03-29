@@ -49,7 +49,7 @@ public class RetrieveTransactionResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(value = "Any errors that occurred during the request.")
+  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -67,7 +67,7 @@ public class RetrieveTransactionResponse {
    * The requested transaction.
    * @return transaction
   **/
-  @ApiModelProperty(value = "The requested transaction.")
+  @ApiModelProperty(example = "null", value = "The requested transaction.")
   public Transaction getTransaction() {
     return transaction;
   }

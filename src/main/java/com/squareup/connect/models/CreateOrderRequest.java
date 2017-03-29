@@ -41,7 +41,7 @@ public class CreateOrderRequest {
    * A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information.
    * @return idempotencyKey
   **/
-  @ApiModelProperty(required = true, value = "A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information.")
+  @ApiModelProperty(example = "null", required = true, value = "A value you specify that uniquely identifies this order among orders you've created.  If you're unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information.")
   public String getIdempotencyKey() {
     return idempotencyKey;
   }
@@ -59,7 +59,7 @@ public class CreateOrderRequest {
    * The order to be created.
    * @return order
   **/
-  @ApiModelProperty(required = true, value = "The order to be created.")
+  @ApiModelProperty(example = "null", required = true, value = "The order to be created.")
   public Order getOrder() {
     return order;
   }
