@@ -41,7 +41,7 @@ public class TenderCashDetails {
    * The total amount of cash provided by the buyer, before change is given.
    * @return buyerTenderedMoney
   **/
-  @ApiModelProperty(example = "null", value = "The total amount of cash provided by the buyer, before change is given.")
+  @ApiModelProperty(value = "The total amount of cash provided by the buyer, before change is given.")
   public Money getBuyerTenderedMoney() {
     return buyerTenderedMoney;
   }
@@ -59,7 +59,7 @@ public class TenderCashDetails {
    * The amount of change returned to the buyer.
    * @return changeBackMoney
   **/
-  @ApiModelProperty(example = "null", value = "The amount of change returned to the buyer.")
+  @ApiModelProperty(value = "The amount of change returned to the buyer.")
   public Money getChangeBackMoney() {
     return changeBackMoney;
   }

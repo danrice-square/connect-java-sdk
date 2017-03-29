@@ -47,7 +47,7 @@ public class CreateRefundRequest {
    * A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.
    * @return idempotencyKey
   **/
-  @ApiModelProperty(example = "null", required = true, value = "A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.")
+  @ApiModelProperty(required = true, value = "A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.")
   public String getIdempotencyKey() {
     return idempotencyKey;
   }
@@ -65,7 +65,7 @@ public class CreateRefundRequest {
    * The ID of the tender to refund.  A [`Transaction`](#type-transaction) has one or more `tenders` (i.e., methods of payment) associated with it, and you refund each tender separately with the Connect API.
    * @return tenderId
   **/
-  @ApiModelProperty(example = "null", required = true, value = "The ID of the tender to refund.  A [`Transaction`](#type-transaction) has one or more `tenders` (i.e., methods of payment) associated with it, and you refund each tender separately with the Connect API.")
+  @ApiModelProperty(required = true, value = "The ID of the tender to refund.  A [`Transaction`](#type-transaction) has one or more `tenders` (i.e., methods of payment) associated with it, and you refund each tender separately with the Connect API.")
   public String getTenderId() {
     return tenderId;
   }
@@ -83,7 +83,7 @@ public class CreateRefundRequest {
    * A description of the reason for the refund.  Default value: `Refund via API`
    * @return reason
   **/
-  @ApiModelProperty(example = "null", value = "A description of the reason for the refund.  Default value: `Refund via API`")
+  @ApiModelProperty(value = "A description of the reason for the refund.  Default value: `Refund via API`")
   public String getReason() {
     return reason;
   }
@@ -101,7 +101,7 @@ public class CreateRefundRequest {
    * The amount of money to refund.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  This amount cannot exceed the amount that was originally charged to the tender that corresponds to `tender_id`.
    * @return amountMoney
   **/
-  @ApiModelProperty(example = "null", required = true, value = "The amount of money to refund.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  This amount cannot exceed the amount that was originally charged to the tender that corresponds to `tender_id`.")
+  @ApiModelProperty(required = true, value = "The amount of money to refund.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  This amount cannot exceed the amount that was originally charged to the tender that corresponds to `tender_id`.")
   public Money getAmountMoney() {
     return amountMoney;
   }

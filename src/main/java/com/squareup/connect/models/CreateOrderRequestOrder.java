@@ -43,7 +43,7 @@ public class CreateOrderRequestOrder {
    * An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
    * @return referenceId
   **/
-  @ApiModelProperty(example = "null", value = "An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.")
+  @ApiModelProperty(value = "An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -66,7 +66,7 @@ public class CreateOrderRequestOrder {
    * The line items to associate with this order.  Each line item represents a different product (or a custom monetary amount) to include in a purchase.
    * @return lineItems
   **/
-  @ApiModelProperty(example = "null", required = true, value = "The line items to associate with this order.  Each line item represents a different product (or a custom monetary amount) to include in a purchase.")
+  @ApiModelProperty(required = true, value = "The line items to associate with this order.  Each line item represents a different product (or a custom monetary amount) to include in a purchase.")
   public List<CreateOrderRequestLineItem> getLineItems() {
     return lineItems;
   }

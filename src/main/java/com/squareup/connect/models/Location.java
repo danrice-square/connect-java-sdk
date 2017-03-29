@@ -80,7 +80,7 @@ public class Location {
    * The location's unique ID.
    * @return id
   **/
-  @ApiModelProperty(example = "null", value = "The location's unique ID.")
+  @ApiModelProperty(value = "The location's unique ID.")
   public String getId() {
     return id;
   }
@@ -98,7 +98,7 @@ public class Location {
    * The location's name.
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "The location's name.")
+  @ApiModelProperty(value = "The location's name.")
   public String getName() {
     return name;
   }
@@ -116,7 +116,7 @@ public class Location {
    * The location's physical address.
    * @return address
   **/
-  @ApiModelProperty(example = "null", value = "The location's physical address.")
+  @ApiModelProperty(value = "The location's physical address.")
   public Address getAddress() {
     return address;
   }
@@ -134,7 +134,7 @@ public class Location {
    * The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.
    * @return timezone
   **/
-  @ApiModelProperty(example = "null", value = "The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.")
+  @ApiModelProperty(value = "The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.")
   public String getTimezone() {
     return timezone;
   }
@@ -157,7 +157,7 @@ public class Location {
    * Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
    * @return capabilities
   **/
-  @ApiModelProperty(example = "null", value = "Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.")
+  @ApiModelProperty(value = "Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.")
   public List<CapabilitiesEnum> getCapabilities() {
     return capabilities;
   }

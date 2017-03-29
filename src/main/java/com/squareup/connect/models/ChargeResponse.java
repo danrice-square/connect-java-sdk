@@ -49,7 +49,7 @@ public class ChargeResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
+  @ApiModelProperty(value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -67,7 +67,7 @@ public class ChargeResponse {
    * The created transaction.
    * @return transaction
   **/
-  @ApiModelProperty(example = "null", value = "The created transaction.")
+  @ApiModelProperty(value = "The created transaction.")
   public Transaction getTransaction() {
     return transaction;
   }

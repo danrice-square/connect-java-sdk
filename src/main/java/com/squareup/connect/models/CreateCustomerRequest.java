@@ -62,7 +62,7 @@ public class CreateCustomerRequest {
    * The customer's given (i.e., first) name.
    * @return givenName
   **/
-  @ApiModelProperty(example = "null", value = "The customer's given (i.e., first) name.")
+  @ApiModelProperty(value = "The customer's given (i.e., first) name.")
   public String getGivenName() {
     return givenName;
   }
@@ -80,7 +80,7 @@ public class CreateCustomerRequest {
    * The customer's family (i.e., last) name.
    * @return familyName
   **/
-  @ApiModelProperty(example = "null", value = "The customer's family (i.e., last) name.")
+  @ApiModelProperty(value = "The customer's family (i.e., last) name.")
   public String getFamilyName() {
     return familyName;
   }
@@ -98,7 +98,7 @@ public class CreateCustomerRequest {
    * The name of the customer's company.
    * @return companyName
   **/
-  @ApiModelProperty(example = "null", value = "The name of the customer's company.")
+  @ApiModelProperty(value = "The name of the customer's company.")
   public String getCompanyName() {
     return companyName;
   }
@@ -116,7 +116,7 @@ public class CreateCustomerRequest {
    * A nickname for the customer.
    * @return nickname
   **/
-  @ApiModelProperty(example = "null", value = "A nickname for the customer.")
+  @ApiModelProperty(value = "A nickname for the customer.")
   public String getNickname() {
     return nickname;
   }
@@ -134,7 +134,7 @@ public class CreateCustomerRequest {
    * The customer's email address.
    * @return emailAddress
   **/
-  @ApiModelProperty(example = "null", value = "The customer's email address.")
+  @ApiModelProperty(value = "The customer's email address.")
   public String getEmailAddress() {
     return emailAddress;
   }
@@ -152,7 +152,7 @@ public class CreateCustomerRequest {
    * The customer's physical address.
    * @return address
   **/
-  @ApiModelProperty(example = "null", value = "The customer's physical address.")
+  @ApiModelProperty(value = "The customer's physical address.")
   public Address getAddress() {
     return address;
   }
@@ -170,7 +170,7 @@ public class CreateCustomerRequest {
    * The customer's phone number.
    * @return phoneNumber
   **/
-  @ApiModelProperty(example = "null", value = "The customer's phone number.")
+  @ApiModelProperty(value = "The customer's phone number.")
   public String getPhoneNumber() {
     return phoneNumber;
   }
@@ -188,7 +188,7 @@ public class CreateCustomerRequest {
    * An optional second ID you can set to associate the customer with an entity in another system.
    * @return referenceId
   **/
-  @ApiModelProperty(example = "null", value = "An optional second ID you can set to associate the customer with an entity in another system.")
+  @ApiModelProperty(value = "An optional second ID you can set to associate the customer with an entity in another system.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -206,7 +206,7 @@ public class CreateCustomerRequest {
    * An optional note to associate with the customer.
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "An optional note to associate with the customer.")
+  @ApiModelProperty(value = "An optional note to associate with the customer.")
   public String getNote() {
     return note;
   }

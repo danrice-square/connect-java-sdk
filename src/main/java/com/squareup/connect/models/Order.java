@@ -53,7 +53,7 @@ public class Order {
    * The order's unique ID.  This value is not present if the order was not created with the [CreateOrder](#endpoint-createorder) endpoint.
    * @return id
   **/
-  @ApiModelProperty(example = "null", value = "The order's unique ID.  This value is not present if the order was not created with the [CreateOrder](#endpoint-createorder) endpoint.")
+  @ApiModelProperty(value = "The order's unique ID.  This value is not present if the order was not created with the [CreateOrder](#endpoint-createorder) endpoint.")
   public String getId() {
     return id;
   }
@@ -71,7 +71,7 @@ public class Order {
    * The ID of the merchant location this order is associated with.
    * @return locationId
   **/
-  @ApiModelProperty(example = "null", value = "The ID of the merchant location this order is associated with.")
+  @ApiModelProperty(value = "The ID of the merchant location this order is associated with.")
   public String getLocationId() {
     return locationId;
   }
@@ -89,7 +89,7 @@ public class Order {
    * A client specified identifier to associate an entity in another system with this order.
    * @return referenceId
   **/
-  @ApiModelProperty(example = "null", value = "A client specified identifier to associate an entity in another system with this order.")
+  @ApiModelProperty(value = "A client specified identifier to associate an entity in another system with this order.")
   public String getReferenceId() {
     return referenceId;
   }
@@ -112,7 +112,7 @@ public class Order {
    * The line items included in the order. Every order has at least one line item.
    * @return lineItems
   **/
-  @ApiModelProperty(example = "null", value = "The line items included in the order. Every order has at least one line item.")
+  @ApiModelProperty(value = "The line items included in the order. Every order has at least one line item.")
   public List<OrderLineItem> getLineItems() {
     return lineItems;
   }
@@ -130,7 +130,7 @@ public class Order {
    * The total amount of money to collect for the order.
    * @return totalMoney
   **/
-  @ApiModelProperty(example = "null", value = "The total amount of money to collect for the order.")
+  @ApiModelProperty(value = "The total amount of money to collect for the order.")
   public Money getTotalMoney() {
     return totalMoney;
   }

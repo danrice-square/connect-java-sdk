@@ -37,7 +37,7 @@ public class ListCustomersRequest {
    * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
    * @return cursor
   **/
-  @ApiModelProperty(example = "null", value = "A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.")
+  @ApiModelProperty(value = "A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.")
   public String getCursor() {
     return cursor;
   }

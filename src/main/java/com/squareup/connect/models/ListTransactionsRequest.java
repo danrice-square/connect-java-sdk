@@ -76,7 +76,7 @@ public class ListTransactionsRequest {
    * The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
    * @return beginTime
   **/
-  @ApiModelProperty(example = "null", value = "The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.")
+  @ApiModelProperty(value = "The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.")
   public String getBeginTime() {
     return beginTime;
   }
@@ -94,7 +94,7 @@ public class ListTransactionsRequest {
    * The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
    * @return endTime
   **/
-  @ApiModelProperty(example = "null", value = "The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.")
+  @ApiModelProperty(value = "The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.")
   public String getEndTime() {
     return endTime;
   }
@@ -112,7 +112,7 @@ public class ListTransactionsRequest {
    * The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
    * @return sortOrder
   **/
-  @ApiModelProperty(example = "null", value = "The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`")
+  @ApiModelProperty(value = "The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`")
   public SortOrderEnum getSortOrder() {
     return sortOrder;
   }
@@ -130,7 +130,7 @@ public class ListTransactionsRequest {
    * A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
    * @return cursor
   **/
-  @ApiModelProperty(example = "null", value = "A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.")
+  @ApiModelProperty(value = "A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.")
   public String getCursor() {
     return cursor;
   }

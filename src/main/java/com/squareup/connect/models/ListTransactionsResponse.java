@@ -52,7 +52,7 @@ public class ListTransactionsResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
+  @ApiModelProperty(value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
@@ -75,7 +75,7 @@ public class ListTransactionsResponse {
    * An array of transactions that match your query.
    * @return transactions
   **/
-  @ApiModelProperty(example = "null", value = "An array of transactions that match your query.")
+  @ApiModelProperty(value = "An array of transactions that match your query.")
   public List<Transaction> getTransactions() {
     return transactions;
   }
@@ -93,7 +93,7 @@ public class ListTransactionsResponse {
    * A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Paginating results](#paginatingresults) for more information.
    * @return cursor
   **/
-  @ApiModelProperty(example = "null", value = "A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Paginating results](#paginatingresults) for more information.")
+  @ApiModelProperty(value = "A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Paginating results](#paginatingresults) for more information.")
   public String getCursor() {
     return cursor;
   }

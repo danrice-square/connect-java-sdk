@@ -605,7 +605,7 @@ public class Address {
    * The first line of the address.  Fields that start with `address_line` provide the address's most specific details, like street number, street name, and building name. They do *not* provide less specific details like city, state/province, or country (these details are provided in other fields).
    * @return addressLine1
   **/
-  @ApiModelProperty(example = "null", value = "The first line of the address.  Fields that start with `address_line` provide the address's most specific details, like street number, street name, and building name. They do *not* provide less specific details like city, state/province, or country (these details are provided in other fields).")
+  @ApiModelProperty(value = "The first line of the address.  Fields that start with `address_line` provide the address's most specific details, like street number, street name, and building name. They do *not* provide less specific details like city, state/province, or country (these details are provided in other fields).")
   public String getAddressLine1() {
     return addressLine1;
   }
@@ -623,7 +623,7 @@ public class Address {
    * The second line of the address, if any.
    * @return addressLine2
   **/
-  @ApiModelProperty(example = "null", value = "The second line of the address, if any.")
+  @ApiModelProperty(value = "The second line of the address, if any.")
   public String getAddressLine2() {
     return addressLine2;
   }
@@ -641,7 +641,7 @@ public class Address {
    * The third line of the address, if any.
    * @return addressLine3
   **/
-  @ApiModelProperty(example = "null", value = "The third line of the address, if any.")
+  @ApiModelProperty(value = "The third line of the address, if any.")
   public String getAddressLine3() {
     return addressLine3;
   }
@@ -659,7 +659,7 @@ public class Address {
    * The city or town of the address.
    * @return locality
   **/
-  @ApiModelProperty(example = "null", value = "The city or town of the address.")
+  @ApiModelProperty(value = "The city or town of the address.")
   public String getLocality() {
     return locality;
   }
@@ -677,7 +677,7 @@ public class Address {
    * A civil region within the address's `locality`, if any.
    * @return sublocality
   **/
-  @ApiModelProperty(example = "null", value = "A civil region within the address's `locality`, if any.")
+  @ApiModelProperty(value = "A civil region within the address's `locality`, if any.")
   public String getSublocality() {
     return sublocality;
   }
@@ -695,7 +695,7 @@ public class Address {
    * A civil region within the address's `sublocality`, if any.
    * @return sublocality2
   **/
-  @ApiModelProperty(example = "null", value = "A civil region within the address's `sublocality`, if any.")
+  @ApiModelProperty(value = "A civil region within the address's `sublocality`, if any.")
   public String getSublocality2() {
     return sublocality2;
   }
@@ -713,7 +713,7 @@ public class Address {
    * A civil region within the address's `sublocality_2`, if any.
    * @return sublocality3
   **/
-  @ApiModelProperty(example = "null", value = "A civil region within the address's `sublocality_2`, if any.")
+  @ApiModelProperty(value = "A civil region within the address's `sublocality_2`, if any.")
   public String getSublocality3() {
     return sublocality3;
   }
@@ -731,7 +731,7 @@ public class Address {
    * A civil entity within the address's country. In the US, this is the state.
    * @return administrativeDistrictLevel1
   **/
-  @ApiModelProperty(example = "null", value = "A civil entity within the address's country. In the US, this is the state.")
+  @ApiModelProperty(value = "A civil entity within the address's country. In the US, this is the state.")
   public String getAdministrativeDistrictLevel1() {
     return administrativeDistrictLevel1;
   }
@@ -749,7 +749,7 @@ public class Address {
    * A civil entity within the address's `administrative_district_level_1`. In the US, this is the county.
    * @return administrativeDistrictLevel2
   **/
-  @ApiModelProperty(example = "null", value = "A civil entity within the address's `administrative_district_level_1`. In the US, this is the county.")
+  @ApiModelProperty(value = "A civil entity within the address's `administrative_district_level_1`. In the US, this is the county.")
   public String getAdministrativeDistrictLevel2() {
     return administrativeDistrictLevel2;
   }
@@ -767,7 +767,7 @@ public class Address {
    * A civil entity within the address's `administrative_district_level_2`, if any.
    * @return administrativeDistrictLevel3
   **/
-  @ApiModelProperty(example = "null", value = "A civil entity within the address's `administrative_district_level_2`, if any.")
+  @ApiModelProperty(value = "A civil entity within the address's `administrative_district_level_2`, if any.")
   public String getAdministrativeDistrictLevel3() {
     return administrativeDistrictLevel3;
   }
@@ -785,7 +785,7 @@ public class Address {
    * The address's postal code.
    * @return postalCode
   **/
-  @ApiModelProperty(example = "null", value = "The address's postal code.")
+  @ApiModelProperty(value = "The address's postal code.")
   public String getPostalCode() {
     return postalCode;
   }
@@ -803,7 +803,7 @@ public class Address {
    * The address's country, in ISO 3166-1-alpha-2 format.
    * @return country
   **/
-  @ApiModelProperty(example = "null", value = "The address's country, in ISO 3166-1-alpha-2 format.")
+  @ApiModelProperty(value = "The address's country, in ISO 3166-1-alpha-2 format.")
   public CountryEnum getCountry() {
     return country;
   }
@@ -821,7 +821,7 @@ public class Address {
    * Optional first name when it's representing recipient.
    * @return firstName
   **/
-  @ApiModelProperty(example = "null", value = "Optional first name when it's representing recipient.")
+  @ApiModelProperty(value = "Optional first name when it's representing recipient.")
   public String getFirstName() {
     return firstName;
   }
@@ -839,7 +839,7 @@ public class Address {
    * Optional last name when it's representing recipient.
    * @return lastName
   **/
-  @ApiModelProperty(example = "null", value = "Optional last name when it's representing recipient.")
+  @ApiModelProperty(value = "Optional last name when it's representing recipient.")
   public String getLastName() {
     return lastName;
   }
@@ -857,7 +857,7 @@ public class Address {
    * Optional organization name when it's representing recipient.
    * @return organization
   **/
-  @ApiModelProperty(example = "null", value = "Optional organization name when it's representing recipient.")
+  @ApiModelProperty(value = "Optional organization name when it's representing recipient.")
   public String getOrganization() {
     return organization;
   }

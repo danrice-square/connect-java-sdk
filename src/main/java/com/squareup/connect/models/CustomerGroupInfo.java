@@ -40,7 +40,7 @@ public class CustomerGroupInfo {
    * The ID of the customer group.
    * @return id
   **/
-  @ApiModelProperty(example = "null", required = true, value = "The ID of the customer group.")
+  @ApiModelProperty(required = true, value = "The ID of the customer group.")
   public String getId() {
     return id;
   }
@@ -58,7 +58,7 @@ public class CustomerGroupInfo {
    * The name of the customer group.
    * @return name
   **/
-  @ApiModelProperty(example = "null", required = true, value = "The name of the customer group.")
+  @ApiModelProperty(required = true, value = "The name of the customer group.")
   public String getName() {
     return name;
   }

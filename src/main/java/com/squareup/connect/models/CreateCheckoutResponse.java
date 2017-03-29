@@ -44,7 +44,7 @@ public class CreateCheckoutResponse {
    * The newly created checkout. If the same request was made with the same idempotency_key, this will be the checkout created with the idempotency_key.
    * @return checkout
   **/
-  @ApiModelProperty(example = "null", value = "The newly created checkout. If the same request was made with the same idempotency_key, this will be the checkout created with the idempotency_key.")
+  @ApiModelProperty(value = "The newly created checkout. If the same request was made with the same idempotency_key, this will be the checkout created with the idempotency_key.")
   public Checkout getCheckout() {
     return checkout;
   }
@@ -67,7 +67,7 @@ public class CreateCheckoutResponse {
    * Any errors that occurred during the request.
    * @return errors
   **/
-  @ApiModelProperty(example = "null", value = "Any errors that occurred during the request.")
+  @ApiModelProperty(value = "Any errors that occurred during the request.")
   public List<Error> getErrors() {
     return errors;
   }
